@@ -38,6 +38,7 @@ namespace FingerTracker
             sw = new Stopwatch();
             sw.Start();
             setEllipse1();
+            Ellipse1.PointerEntered += Button1Entered; 
         }
 
         
@@ -53,8 +54,9 @@ namespace FingerTracker
                 await Task.Delay(1000);
                 setEllipse1();
 
-                //Ellipse2.PointerEntered -= Button1Entered;
-                //Ellipse1.PointerEntered += Button1Entered;
+                Debug.WriteLine("Entered Button 2. Decouping 2 and Coupling 1");
+                Ellipse2.PointerEntered -= Button2Entered;
+                Ellipse1.PointerEntered += Button1Entered;
 
             }
             else {
@@ -77,8 +79,9 @@ namespace FingerTracker
             Ellipse2.Visibility = Visibility.Visible;
 
             //couple and decouple event handlers
-            //Ellipse1.PointerEntered -= Button1Entered;
-            //Ellipse2.PointerEntered += Button2Entered;
+            Debug.WriteLine("Entered Button 1. Decouping 1 and Coupling 2");
+            Ellipse1.PointerEntered -= Button1Entered;
+            Ellipse2.PointerEntered += Button2Entered;
             
         }
 
@@ -91,6 +94,9 @@ namespace FingerTracker
             Ellipse1.Height = positions[curItem];
             curItem++;
             Ellipse1.Visibility = Visibility.Visible;
+
+            //setEventHandler
+            //Ellipse1.PointerEntered+=Button1Entered; 
 
         }
 

@@ -10,8 +10,8 @@
     <Canvas x:Name="canvas" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" PointerMoved="backGndPointerMoved">
 
 
-        <Ellipse x:Name="Ellipse1" Fill="#FFF4F4F5" Height="100" Canvas.Left="900" Stroke="Black" Canvas.Top="357" Width="100" PointerEntered="Button1Entered" Visibility="Collapsed"/>
-        <Ellipse x:Name="Ellipse2" Fill="#FFF4F4F5" Height="100" Canvas.Left="570" Stroke="Black" Canvas.Top="357" Width="100" RenderTransformOrigin="0.51,0.51" PointerEntered="Button2Entered" Visibility="Collapsed"/>
+        <Ellipse x:Name="Ellipse1" Fill="#FFF4F4F5" Height="100" Canvas.Left="900" Stroke="Black" Canvas.Top="357" Width="100" Visibility="Collapsed"/>
+        <Ellipse x:Name="Ellipse2" Fill="#FFF4F4F5" Height="100" Canvas.Left="570" Stroke="Black" Canvas.Top="357" Width="100" RenderTransformOrigin="0.51,0.51"  Visibility="Collapsed"/>
         <TextBox x:Name="textbox" Canvas.Left="747" TextWrapping="Wrap" Text="TextBox" Canvas.Top="156" Height="147" Width="172"/>
 
     </Canvas>

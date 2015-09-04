@@ -13,4 +13,8 @@ namespace FingerTracker
         public List<int> yPos = new List<int>();
         public List<int> timeStamp = new List<int>();
     }
+
+    public class Node { 
+
+    }
 }

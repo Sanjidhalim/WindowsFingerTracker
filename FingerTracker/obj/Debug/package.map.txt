@@ -1,0 +1,13 @@
+[Files]
+"C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\AppxManifest.xml" "AppxManifest.xml"
+"C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\FingerTracker.exe" "FingerTracker.exe"
+"C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\Assets\Logo.scale-100.png" "Assets\Logo.scale-100.png"
+"C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\Assets\SmallLogo.scale-100.png" "Assets\SmallLogo.scale-100.png"
+"C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\Assets\SplashScreen.scale-100.png" "Assets\SplashScreen.scale-100.png"
+"C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\Assets\StoreLogo.scale-100.png" "Assets\StoreLogo.scale-100.png"
+"C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\Common\ReadMe.txt" "Common\ReadMe.txt"
+"C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\App.xbf" "App.xbf"
+"C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\MainPage.xbf" "MainPage.xbf"
+"C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\Test.xbf" "Test.xbf"
+"C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\Test2.xbf" "Test2.xbf"
+"C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\resources.pri" "resources.pri"
