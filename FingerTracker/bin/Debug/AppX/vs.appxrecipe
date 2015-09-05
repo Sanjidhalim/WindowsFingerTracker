@@ -6,24 +6,24 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>fc91a7a5-0a23-48a2-9261-46169692835c</PackageIdentityName>
-    <RegisteredManifestChecksum>16C4FFF7BF2D8AC06561804F5CED124EF1696CE949CAC1BE61919518A2E7DEFC</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>fc91a7a5-0a23-48a2-9261-46169692835c_1.0.0.0_neutral__ckqv5kvdz01zw</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>1F377F9176CA4AF66C717C29582A50322AA21F67DF5115F3A61E52F7D762AA91</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>fc91a7a5-0a23-48a2-9261-46169692835c_1.0.0.1_neutral__ckqv5kvdz01zw</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>fc91a7a5-0a23-48a2-9261-46169692835c_ckqv5kvdz01zw!App</RegisteredUserModeAppID>
     <RegisteredPackageID>fc91a7a5-0a23-48a2-9261-46169692835c</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=Joy</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredVersion>1.0.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-04T16:36:46.461</Modified>
+      <Modified>2015-09-05T04:23:59.842</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\FingerTracker.exe">
       <PackagePath>FingerTracker.exe</PackagePath>
-      <Modified>2015-09-04T21:13:47.901</Modified>
+      <Modified>2015-09-05T04:47:38.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -51,23 +51,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-08-31T13:09:06.944</Modified>
+      <Modified>2015-09-05T04:05:08.212</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-08-31T20:01:51.636</Modified>
+      <Modified>2015-09-05T04:05:08.213</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\Test.xbf">
       <PackagePath>Test.xbf</PackagePath>
-      <Modified>2015-08-31T20:01:51.636</Modified>
+      <Modified>2015-09-05T04:05:08.214</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\Test2.xbf">
       <PackagePath>Test2.xbf</PackagePath>
-      <Modified>2015-09-04T17:53:58.164</Modified>
+      <Modified>2015-09-05T04:05:08.214</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-09-04T16:36:45.391</Modified>
+      <Modified>2015-09-05T04:23:59.656</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

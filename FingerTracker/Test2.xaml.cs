@@ -26,15 +26,14 @@ namespace FingerTracker
     public sealed partial class Test2 : Page
     {
 
-        int[] positions = { 125,125,40, 430, 430, 20, 220, 220, 10, 500, 500, 15,
-                          375, 281, 70, 600, 500, 55};
-        int curItem = 0;
         int Touchpoints = 0;
+        private DataStorage ds;
         Stopwatch sw;
 
         public Test2()
         {
             this.InitializeComponent();
+            ds = new DataStorage();
             sw = new Stopwatch();
             sw.Start();
             setEllipse1();
@@ -45,11 +44,13 @@ namespace FingerTracker
 
         async private void Button2Entered(object sender, PointerRoutedEventArgs e)
         {
-            await Task.Delay(500);
+            ds.iHaveEnteredAButton();
+
+            await Task.Delay(1000);
             Ellipse1.Visibility = Visibility.Collapsed;
             Ellipse2.Visibility = Visibility.Collapsed;
 
-            if (curItem < positions.Length)
+            if (!ds.endOfCircles())
             {
                 await Task.Delay(1000);
                 setEllipse1();
@@ -60,44 +61,43 @@ namespace FingerTracker
 
             }
             else {
-                curItem = 0;
                 sw.Stop();
-                this.Frame.Navigate(typeof(MainPage));
+                ds.writeToFile();
+                await Task.Delay(2000);
+                Application.Current.Exit();
+                //this.Frame.Navigate(typeof(MainPage));
             }
 
         }
 
         private void Button1Entered(object sender, PointerRoutedEventArgs e)
         {
-            Canvas.SetTop(Ellipse2, positions[curItem]);
-            curItem++;
-            Canvas.SetLeft(Ellipse2, positions[curItem]);
-            curItem++;
-            Ellipse2.Width = positions[curItem];
-            Ellipse2.Height = positions[curItem];
-            curItem++;
+            ds.iHaveEnteredAButton();            
+            
+            int[] circles = ds.getNextCircle();
+
+            Canvas.SetTop(Ellipse2, circles[0]);
+            Canvas.SetLeft(Ellipse2, circles[1]);
+            Ellipse2.Width = circles[2];
+            Ellipse2.Height = circles[2];
             Ellipse2.Visibility = Visibility.Visible;
 
             //couple and decouple event handlers
             Debug.WriteLine("Entered Button 1. Decouping 1 and Coupling 2");
             Ellipse1.PointerEntered -= Button1Entered;
             Ellipse2.PointerEntered += Button2Entered;
-            
+
+ 
         }
 
         private void setEllipse1() {
-            Canvas.SetTop(Ellipse1, positions[curItem]);
-            curItem++;
-            Canvas.SetLeft(Ellipse1, positions[curItem]);
-            curItem++;
-            Ellipse1.Width = positions[curItem];
-            Ellipse1.Height = positions[curItem];
-            curItem++;
+            int[] circles = ds.getNextCircle();
+
+            Canvas.SetTop(Ellipse1, circles[0]);
+            Canvas.SetLeft(Ellipse1, circles[1]);
+            Ellipse1.Width = circles[2];
+            Ellipse1.Height = circles[2];
             Ellipse1.Visibility = Visibility.Visible;
-
-            //setEventHandler
-            //Ellipse1.PointerEntered+=Button1Entered; 
-
         }
 
         private void backGndPointerMoved(object sender, PointerRoutedEventArgs e)
@@ -106,6 +106,8 @@ namespace FingerTracker
             PointerPoint pt = e.GetCurrentPoint(canvas);
             double xPoint = pt.Position.X;
             double yPoint = pt.Position.Y;
+            ds.addData(xPoint, yPoint, (int)sw.ElapsedMilliseconds);
+
             textbox.Text = Touchpoints.ToString() + " X:" + (int) xPoint + " Y:" + (int) yPoint
                 + " Time: " + sw.ElapsedMilliseconds;
         }

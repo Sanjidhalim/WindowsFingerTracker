@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="fc91a7a5-0a23-48a2-9261-46169692835c" Publisher="CN=Joy" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <Identity Name="fc91a7a5-0a23-48a2-9261-46169692835c" Publisher="CN=Joy" Version="1.0.0.2" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>FingerTracker</DisplayName>
     <PublisherDisplayName>Joy</PublisherDisplayName>
