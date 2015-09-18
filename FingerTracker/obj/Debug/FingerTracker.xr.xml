@@ -68,7 +68,6 @@
       <RootProperty Name="Text" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
-      <RootProperty Name="IsReadOnly" />
     </RootType>
     <RootType FullName="FingerTracker.Test2" />
   </Roots.RootTypes>

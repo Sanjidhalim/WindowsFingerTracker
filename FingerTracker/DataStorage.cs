@@ -58,7 +58,10 @@ namespace FingerTracker
                 strBld.Append("\nData for pair " + pair + "\n");
                 pair++;
 
-                start = splitCircleData[i]-1;
+                start = splitCircleData[i];
+                if (start <= 0) {
+                    start = 0;
+                }
                 end = splitCircleData[i + 1]-1;
 
                 for (int j = start; j < end; j++) {
