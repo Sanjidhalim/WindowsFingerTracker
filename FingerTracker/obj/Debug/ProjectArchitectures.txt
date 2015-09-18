@@ -1,1 +1,1 @@
-C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\FingerTracker.csproj;neutral
+C:\New folder\WindowsFingerTracker\FingerTracker\FingerTracker.csproj;neutral

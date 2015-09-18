@@ -1,73 +1,80 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>SANJID</Machine>
-    <WindowsUser>Joy</WindowsUser>
+    <Machine>TABLET</Machine>
+    <WindowsUser>michael</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>fc91a7a5-0a23-48a2-9261-46169692835c</PackageIdentityName>
-    <RegisteredManifestChecksum>1F377F9176CA4AF66C717C29582A50322AA21F67DF5115F3A61E52F7D762AA91</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>fc91a7a5-0a23-48a2-9261-46169692835c_1.0.0.1_neutral__ckqv5kvdz01zw</RegisteredPackageMoniker>
+    <IntermediateOutputPath>C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>3F05BC618E85D7E9C21FCB6B39B394C79E35F00F99F4586C76024410DD731719</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>fc91a7a5-0a23-48a2-9261-46169692835c_1.0.0.2_neutral__ckqv5kvdz01zw</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>fc91a7a5-0a23-48a2-9261-46169692835c_ckqv5kvdz01zw!App</RegisteredUserModeAppID>
     <RegisteredPackageID>fc91a7a5-0a23-48a2-9261-46169692835c</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=Joy</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.1</RegisteredVersion>
+    <RegisteredVersion>1.0.0.2</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-05T04:23:59.842</Modified>
+      <Modified>2015-09-18T04:14:03.343</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\FingerTracker.exe">
+    <AppxPackagedFile Include="C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\FingerTracker.exe">
       <PackagePath>FingerTracker.exe</PackagePath>
-      <Modified>2015-09-05T04:47:38.688</Modified>
+      <Modified>2015-09-18T04:16:38.268</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\New folder\WindowsFingerTracker\FingerTracker\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-07-23T12:01:02.000</Modified>
+      <Modified>2015-09-18T04:11:11.059</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\New folder\WindowsFingerTracker\FingerTracker\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-07-23T12:01:02.000</Modified>
+      <Modified>2015-09-18T04:11:11.062</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\New folder\WindowsFingerTracker\FingerTracker\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-07-23T12:01:02.000</Modified>
+      <Modified>2015-09-18T04:11:11.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\New folder\WindowsFingerTracker\FingerTracker\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-07-23T12:01:02.000</Modified>
+      <Modified>2015-09-18T04:11:11.068</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\Common\ReadMe.txt">
+    <AppxPackagedFile Include="C:\New folder\WindowsFingerTracker\FingerTracker\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>
-      <Modified>2015-08-31T13:08:34.451</Modified>
+      <Modified>2015-09-18T04:11:11.113</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2015-09-05T04:05:08.212</Modified>
+      <Modified>2015-09-18T04:14:02.116</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-09-05T04:05:08.213</Modified>
+      <Modified>2015-09-18T04:14:02.127</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\Test.xbf">
+    <AppxPackagedFile Include="C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\Test.xbf">
       <PackagePath>Test.xbf</PackagePath>
-      <Modified>2015-09-05T04:05:08.214</Modified>
+      <Modified>2015-09-18T04:14:02.136</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\Test2.xbf">
+    <AppxPackagedFile Include="C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\Test2.xbf">
       <PackagePath>Test2.xbf</PackagePath>
-      <Modified>2015-09-05T04:05:08.214</Modified>
+      <Modified>2015-09-18T04:14:02.144</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\FingerTracker.xr.xml">
+      <PackagePath>FingerTracker.xr.xml</PackagePath>
+      <Modified>2015-09-18T04:14:01.759</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-09-05T04:23:59.656</Modified>
+      <Modified>2015-09-18T04:14:03.044</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

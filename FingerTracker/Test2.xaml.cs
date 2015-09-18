@@ -46,6 +46,9 @@ namespace FingerTracker
         {
             ds.iHaveEnteredAButton();
 
+            Ellipse2.PointerEntered -= Button2Entered;
+            Ellipse1.PointerEntered += Button1Entered;
+
             await Task.Delay(1000);
             Ellipse1.Visibility = Visibility.Collapsed;
             Ellipse2.Visibility = Visibility.Collapsed;
@@ -56,8 +59,6 @@ namespace FingerTracker
                 setEllipse1();
 
                 Debug.WriteLine("Entered Button 2. Decouping 2 and Coupling 1");
-                Ellipse2.PointerEntered -= Button2Entered;
-                Ellipse1.PointerEntered += Button1Entered;
 
             }
             else {
@@ -73,14 +74,6 @@ namespace FingerTracker
         private void Button1Entered(object sender, PointerRoutedEventArgs e)
         {
             ds.iHaveEnteredAButton();            
-            
-            int[] circles = ds.getNextCircle();
-
-            Canvas.SetTop(Ellipse2, circles[0]);
-            Canvas.SetLeft(Ellipse2, circles[1]);
-            Ellipse2.Width = circles[2];
-            Ellipse2.Height = circles[2];
-            Ellipse2.Visibility = Visibility.Visible;
 
             //couple and decouple event handlers
             Debug.WriteLine("Entered Button 1. Decouping 1 and Coupling 2");
@@ -98,6 +91,14 @@ namespace FingerTracker
             Ellipse1.Width = circles[2];
             Ellipse1.Height = circles[2];
             Ellipse1.Visibility = Visibility.Visible;
+
+            circles = ds.getNextCircle();
+
+            Canvas.SetTop(Ellipse2, circles[0]);
+            Canvas.SetLeft(Ellipse2, circles[1]);
+            Ellipse2.Width = circles[2];
+            Ellipse2.Height = circles[2];
+            Ellipse2.Visibility = Visibility.Visible;
         }
 
         private void backGndPointerMoved(object sender, PointerRoutedEventArgs e)

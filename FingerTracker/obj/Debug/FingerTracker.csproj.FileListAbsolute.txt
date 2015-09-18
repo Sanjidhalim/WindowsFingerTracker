@@ -39,3 +39,45 @@ C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\o
 C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Joy\documents\visual studio 2013\Projects\FingerTracker\FingerTracker\obj\Debug\ProjectArchitectures.txt
+C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\App.xbf
+C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\MainPage.xbf
+C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\Test.xbf
+C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\Test2.xbf
+C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\FingerTracker.xr.xml
+C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\FingerTracker.exe
+C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\FingerTracker.pdb
+C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\resources.pri
+C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\AppxManifest.xml
+C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\FingerTracker.build.appxrecipe
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\App.g.i.cs
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\App.g.cs
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\MainPage.g.i.cs
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\MainPage.g.cs
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\Test.g.i.cs
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\Test.g.cs
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\Test2.g.i.cs
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\Test2.g.cs
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\XamlTypeInfo.g.cs
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\App.xaml
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\MainPage.xaml
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\Test.xaml
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\Test2.xaml
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\App.xbf
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\MainPage.xbf
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\Test.xbf
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\Test2.xbf
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\XamlSaveStateFile.xml
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\FingerTracker.exe
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\FingerTracker.pdb
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\priconfig.xml
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\priconfig.xml.intermediate
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\layout.resfiles
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\layout.resfiles.intermediate
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\resources.resfiles
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\resources.resfiles.intermediate
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\pri.resfiles
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\pri.resfiles.intermediate
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\qualifiers.txt
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\qualifiers.txt.intermediate
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\New folder\WindowsFingerTracker\FingerTracker\obj\Debug\ProjectArchitectures.txt
