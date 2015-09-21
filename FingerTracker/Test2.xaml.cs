@@ -25,7 +25,7 @@ namespace FingerTracker
     /// </summary>
     public sealed partial class Test2 : Page
     {
-
+        uint pId = 0;
         int Touchpoints = 0;
         private DataStorage ds;
         Stopwatch sw;
@@ -37,18 +37,29 @@ namespace FingerTracker
             sw = new Stopwatch();
             sw.Start();
             setEllipse1();
-            Ellipse1.PointerEntered += Button1Entered; 
+            Ellipse3.PointerPressed += Button1Entered;
+            Ellipse3.PointerEntered += Button1Entered;
         }
 
         
 
         async private void Button2Entered(object sender, PointerRoutedEventArgs e)
         {
+
+            Debug.WriteLine("Entered the Secoond Button :");
+            if (!CapturePointer(e.Pointer)) {
+                Debug.WriteLine("Could not capture pointer.");
+                e.Handled = true;
+                return;
+            }
             ds.iHaveEnteredAButton();
             blinkMethod(false);
 
-            Ellipse2.PointerEntered -= Button2Entered;
-            Ellipse1.PointerEntered += Button1Entered;
+            Ellipse4.PointerEntered -= Button2Entered;
+            Ellipse4.PointerPressed -= Button2Entered;
+
+            Ellipse3.PointerPressed += Button1Entered;
+            Ellipse3.PointerEntered += Button1Entered;
 
             await Task.Delay(1000);
             Ellipse1.Visibility = Visibility.Collapsed;
@@ -67,26 +78,41 @@ namespace FingerTracker
                 ds.writeToFile();
                 await Task.Delay(2000);
                 Application.Current.Exit();
-                //this.Frame.Navigate(typeof(MainPage));
             }
 
         }
 
         private void Button1Entered(object sender, PointerRoutedEventArgs e)
         {
+
+            if (!CapturePointer(e.Pointer))
+            {
+                e.Handled = true;
+                return;
+            }
+            else {
+                ReleasePointerCapture(e.Pointer);
+            }
+
             ds.iHaveEnteredAButton();
             blinkMethod(true);
 
             //couple and decouple event handlers
             Debug.WriteLine("Entered Button 1. Decouping 1 and Coupling 2");
-            Ellipse1.PointerEntered -= Button1Entered;
-            Ellipse2.PointerEntered += Button2Entered;
+            Ellipse3.PointerPressed -= Button1Entered;
+            Ellipse3.PointerEntered -= Button1Entered;
+            Ellipse4.PointerEntered += Button2Entered;
+            Ellipse4.PointerPressed += Button2Entered;
 
  
         }
 
         private void setEllipse1() {
             int[] circles = ds.getNextCircle();
+
+            int temp = circles[0];
+            int temp2 = circles[1];
+            int smallWidth = 30;
 
             circles[0] = circles[0] - circles[2] / 2;
             circles[1] = circles[1] - circles[2] / 2;
@@ -97,7 +123,17 @@ namespace FingerTracker
             Ellipse1.Height = circles[2];
             Ellipse1.Visibility = Visibility.Visible;
 
+            Canvas.SetTop(Ellipse3, temp - smallWidth/2 );
+            Canvas.SetLeft(Ellipse3, temp2 - smallWidth/2);
+            Ellipse3.Width = smallWidth;
+            Ellipse3.Height = smallWidth;
+            Ellipse3.Visibility = Visibility.Visible;
+
+
+
             circles = ds.getNextCircle();
+            temp = circles[0];
+            temp2 = circles[1];
 
             circles[0] = circles[0] - circles[2] / 2;
             circles[1] = circles[1] - circles[2] / 2;
@@ -107,15 +143,31 @@ namespace FingerTracker
             Ellipse2.Width = circles[2];
             Ellipse2.Height = circles[2];
             Ellipse2.Visibility = Visibility.Visible;
+
+            Canvas.SetTop(Ellipse4, temp - smallWidth / 2);
+            Canvas.SetLeft(Ellipse4, temp2 - smallWidth / 2);
+            Ellipse4.Width = smallWidth;
+            Ellipse4.Height = smallWidth;
+            Ellipse4.Visibility = Visibility.Visible;
         }
 
         private void backGndPointerMoved(object sender, PointerRoutedEventArgs e)
         {
+            bool boolean = true; ;
+
+            if (!CapturePointer(e.Pointer))
+            {
+                boolean = false;
+            }
+            else
+            {
+                ReleasePointerCapture(e.Pointer);
+            }
             Touchpoints++;
             PointerPoint pt = e.GetCurrentPoint(canvas);
             double xPoint = pt.Position.X;
             double yPoint = pt.Position.Y;
-            ds.addData(xPoint, yPoint, (int)sw.ElapsedMilliseconds);
+            ds.addData(xPoint, yPoint, (int)sw.ElapsedMilliseconds, boolean);
 
             /*Rect x = Window.Current.Bounds;
             Debug.WriteLine("Top y: " + x.Top);
@@ -123,8 +175,8 @@ namespace FingerTracker
             Debug.WriteLine("Left x: " + x.Left);
             Debug.WriteLine("Right x: " + x.Right);*/
 
-            textBox.Text = Touchpoints.ToString() + " X:" + (int) xPoint + " Y:" + (int) yPoint
-                + " Time: " + sw.ElapsedMilliseconds;
+            //textBox.Text = Touchpoints.ToString() + " X:" + (int) xPoint + " Y:" + (int) yPoint
+            //    + " Time: " + sw.ElapsedMilliseconds;
         }
 
         async void blinkMethod(bool Bool) {

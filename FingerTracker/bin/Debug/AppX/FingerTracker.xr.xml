@@ -62,12 +62,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="RenderTransformOrigin" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Text" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
+      <RootProperty Name="Opacity" />
     </RootType>
     <RootType FullName="FingerTracker.Test2" />
   </Roots.RootTypes>

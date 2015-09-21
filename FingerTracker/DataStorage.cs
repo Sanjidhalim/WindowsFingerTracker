@@ -24,8 +24,8 @@ namespace FingerTracker
             curPos = 0;
         }
 
-        public void addData(double x, double y, int time){
-            touchData.Add(new Node(x,y,time));
+        public void addData(double x, double y, int time, bool contact){
+            touchData.Add(new Node(x,y,time,contact));
         }
 
         public int[] getNextCircle() {
@@ -102,15 +102,17 @@ namespace FingerTracker
         public double xPos;
         public double yPos;
         public int timeStamp;
+        public bool contact;
 
-        public Node(double x, double y, int t) {
+        public Node(double x, double y, int t, bool cnt) {
             xPos = x;
             yPos = y;
             timeStamp = t;
+            contact = cnt; 
         }
 
         public string customToString() {
-            return (xPos + ", " + yPos + ", " + timeStamp);
+            return (xPos + ", " + yPos + ", " + timeStamp + ", " + contact);
         }
     }
 }
