@@ -46,9 +46,7 @@ namespace FingerTracker
         async private void Button2Entered(object sender, PointerRoutedEventArgs e)
         {
 
-            Debug.WriteLine("Entered the Secoond Button :");
-            if (!CapturePointer(e.Pointer)) {
-                Debug.WriteLine("Could not capture pointer.");
+            if (!e.Pointer.IsInContact) {
                 e.Handled = true;
                 return;
             }
@@ -85,13 +83,10 @@ namespace FingerTracker
         private void Button1Entered(object sender, PointerRoutedEventArgs e)
         {
 
-            if (!CapturePointer(e.Pointer))
+            if (!e.Pointer.IsInContact)
             {
                 e.Handled = true;
                 return;
-            }
-            else {
-                ReleasePointerCapture(e.Pointer);
             }
 
             ds.iHaveEnteredAButton();
@@ -153,16 +148,7 @@ namespace FingerTracker
 
         private void backGndPointerMoved(object sender, PointerRoutedEventArgs e)
         {
-            bool boolean = true; ;
-
-            if (!CapturePointer(e.Pointer))
-            {
-                boolean = false;
-            }
-            else
-            {
-                ReleasePointerCapture(e.Pointer);
-            }
+            bool boolean = e.Pointer.IsInContact; 
             Touchpoints++;
             PointerPoint pt = e.GetCurrentPoint(canvas);
             double xPoint = pt.Position.X;

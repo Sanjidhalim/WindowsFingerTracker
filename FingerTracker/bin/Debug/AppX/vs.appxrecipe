@@ -26,7 +26,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\New folder\WindowsFingerTracker\FingerTracker\bin\Debug\FingerTracker.exe">
       <PackagePath>FingerTracker.exe</PackagePath>
-      <Modified>2015-09-21T20:27:02.019</Modified>
+      <Modified>2015-09-21T20:34:41.300</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\New folder\WindowsFingerTracker\FingerTracker\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
